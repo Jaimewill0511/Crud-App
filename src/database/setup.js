@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const {Schema} = mongoose;
-const connectionString = "mongodb://localhost:27017/CRUD_app"
+const connectionString = "mongodb+srv://admin-william:ecgem73bQE3U9B4@data.13ulc.mongodb.net/CRUD_app?retryWrites=true&w=majority";
 
 module.exports = () => {
     mongoose.connect(connectionString, {
@@ -16,3 +16,9 @@ module.exports = () => {
     })
 
 }
+//ecgem73bQE3U9B4
+
+
+
+
+
