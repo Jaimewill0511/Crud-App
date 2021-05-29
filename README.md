@@ -17,9 +17,9 @@
 
 ## Usage
 
-Heroku  hosting link is ```https://simple-persons-api.herokuapp.com```
+Heroku  hosting link is ```https://enigmatic-fortress-57340.herokuapp.com```
 
-> URL = ```https://simple-persons-api.herokuapp.com```
+> URL = ```https://enigmatic-fortress-57340.herokuapp.com```
   
   # Sample Error Message
   ```sh
