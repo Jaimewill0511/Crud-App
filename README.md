@@ -85,7 +85,6 @@ Heroku  hosting link is ```https://simple-persons-api.herokuapp.com/```
         }
 }
 ```
-## Install
 
 > Sample Response
 ```sh
@@ -101,7 +100,7 @@ Heroku  hosting link is ```https://simple-persons-api.herokuapp.com/```
         "__v": 0
     }
 }
-npm install
+
 ```
 <h3>UPDATE A PERSON [REQUEST TYPE : PUT]</h3>
 ```PUT``` ```{{ URL }}``` ```/appData/:id```
@@ -118,7 +117,7 @@ npm install
         }
 }
 ```
-## Usage
+
 
 > Sample Response
 ```sh
@@ -131,14 +130,13 @@ GET {{ BASE_URL }} api/v1/persons
 <h3>DELETE A PERSON [REQUEST TYPE : PUT]</h3>
 ```DELETE``` ```{{ URL }}``` ```/appData/:id```
 
-## Run tests
 
 > Sample Response
 ```sh
 {
     "message": "data deleted sucessfully"
 }
-npm run test
+
 ```
 
 
