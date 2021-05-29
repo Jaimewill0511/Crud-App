@@ -100,7 +100,9 @@ Heroku  hosting link is ```https://simple-persons-api.herokuapp.com```
 
 ```
 <h3>UPDATE A PERSON [REQUEST TYPE : PUT]</h3>
+
 ```PUT``` ```{{ URL }}``` ```/appData/:id```
+
 > If you are using postman set to raw and ```Content-Type: application/json```
 
 > Sample Request Body
@@ -122,9 +124,9 @@ Heroku  hosting link is ```https://simple-persons-api.herokuapp.com```
     "message": "data updated sucessfully",
    
 }
-GET {{ BASE_URL }} api/v1/persons
 ```
 <h3>DELETE A PERSON [REQUEST TYPE : PUT]</h3>
+
 ```DELETE``` ```{{ URL }}``` ```/appData/:id```
 
 
