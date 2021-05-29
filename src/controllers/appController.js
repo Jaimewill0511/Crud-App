@@ -50,7 +50,7 @@ exports.createNewData = (req,res) => {
         else if (!data) {
               return res.status(404).json({message: "data not found"})} 
         else {
-                return res.status(200).json({ data})
+                return res.status(200).json({ message: "Request Sucessful", data})
          }
     })
   }
