@@ -15,11 +15,6 @@
 
 - node 14.15.0
 
-## Install
-
-```sh
-npm install
-```
 
 ## Usage
 
