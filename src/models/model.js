@@ -5,8 +5,7 @@ const appSchema = new Schema({
     
     data: {
        name:  String,
-    
-        email: {
+       email: {
             type: String,
             unique: true
         },
