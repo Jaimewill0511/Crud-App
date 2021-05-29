@@ -2,13 +2,17 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const appSchema = new Schema({
-    isPopulalar: String,
+    
     data: {
        name:  String,
-       email: String,
+    
+        email: {
+            type: String,
+            unique: true
+        },
        country: String
    }
 });
-const App = mongoose.model("App", appSchema)
 
-module.exports = App;
+
+module.exports = mongoose.model("App", appSchema);

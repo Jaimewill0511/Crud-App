@@ -14,20 +14,27 @@ exports.createNewData = (req,res) => {
     let conditions ={};
     App.find(conditions, ((err, data) => {
       if (err) return res.status(500).json({message: err})
-      else return res.status(200).json({data})
+      else return res.status(200).json({
+        message: 'Request Successful.',
+        data})
     }))
   }
 
   exports.changeData = (req, res) => {
+    
+    
     App.findByIdAndUpdate(req.params.id, {
         ...req.body
-    }, (err,data) => {
+        
+    }, (err, data) => {
+      console.log(data)
       if (err) {
         return res.status(500).json({message: err})
       } else if (!data) {
         return res.status(404).json({message: "data not found"})} 
         else {
            data.save((err, savedata) => {
+            console.log(savedata)
               if (err) return res.status(500).json({err})
               else return res.status(200).json({message: "data updated sucessfully"})
             })

@@ -5,6 +5,7 @@ const connectionString = "mongodb+srv://admin-william:ecgem73bQE3U9B4@data.13ulc
 module.exports = () => {
     mongoose.connect(connectionString, {
         useUnifiedTopology: true,
+        useCreateIndex: true,
         useNewUrlParser: true,
         useFindAndModify: false
     }, (err) => {

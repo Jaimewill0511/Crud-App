@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const dbSetup = require("./database/setup");
 const routes = require("./routes/routes");
+require('dotenv').config();
+const  {PORT} = process.env;
 
 app.use(express.json()) 
 
@@ -16,7 +18,8 @@ app.use(express.urlencoded(
 ));//pass information from an html file to a Server using a body parser
 
 
-
-app.listen(process.env.PORT  || 3000 , function () {
-  console.log("The Server has started on port 3000");
+const port = process.env.PORT || PORT
+app.listen( port,  () => {
+  
+  console.log(`app is working on port ${port}`);
 });
