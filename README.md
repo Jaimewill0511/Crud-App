@@ -17,7 +17,7 @@
 
 ## Usage
 
-Heroku  hosting link is ```https://simple-persons-api.herokuapp.com/```
+Heroku  hosting link is ```https://simple-persons-api.herokuapp.com```
 
 > URL = ```https://simple-persons-api.herokuapp.com```
   
@@ -55,19 +55,16 @@ Heroku  hosting link is ```https://simple-persons-api.herokuapp.com/```
 > Sample Response
 ```sh
 {
-    "message": "Request Successful.",
-    "data" : [
-        {
-            "data": {
-                "name": "george",
-                "email": "george@gmail.com",
-                "country": "Kenya"
-            },
-            "_id": "xxxxxxxxxxxxxxxxxxx",
-            "__v": 0
-        }
-        
-    ]
+  "message": "Request Sucessful",
+  "data": {
+    "data": {
+      "name": "george",
+      "email": "george@gmail.com",
+      "country": "Kenya"
+    },
+    "_id": "60a80179ca83003cb88d508d",
+    "__v": 0
+  }
 }
 ```
 <h3>CREATE A PERSON [REQUEST TYPE : POST]</h3>
